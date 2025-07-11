@@ -6,7 +6,7 @@ add_library(SDLEngine STATIC ${SRC_FILES})
 
 set(SDL_TTF_URL "https://github.com/libsdl-org/SDL_ttf/releases/download/release-2.24.0/SDL2_ttf-devel-2.24.0-mingw.tar.gz")
 set(SDL_TTF_ZIP ${CMAKE_BINARY_DIR}/SDL2_ttf.zip)
-set(SDL_TTF_DIR ${CMAKE_BINARY_DIR}/../external)
+set(SDL_TTF_DIR ${CMAKE_BINARY_DIR}/external)
 
 # Download the zip archive
 file(DOWNLOAD ${SDL_TTF_URL} ${SDL_TTF_ZIP} SHOW_PROGRESS)
