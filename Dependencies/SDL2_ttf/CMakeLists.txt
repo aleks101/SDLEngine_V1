@@ -12,13 +12,16 @@ include(FetchContent)
 # Disable shared libs globally
 set(BUILD_SHARED_LIBS OFF CACHE BOOL "Only build static libs" FORCE)
 
-# Now fetch SDL2_ttf
+# Now fetch FreeType
 FetchContent_Declare(
     FreeType
     GIT_REPOSITORY https://github.com/freetype/freetype.git
     GIT_TAG VER-2-13-3
 )
 FetchContent_MakeAvailable(FreeType)
+
+# Enable shared libs globally
+set(BUILD_SHARED_LIBS ON CACHE BOOL "Only build shared libs" FORCE)
 
 # Tell SDL2_ttf where FreeType is
 set(FREETYPE_INCLUDE_DIRS
