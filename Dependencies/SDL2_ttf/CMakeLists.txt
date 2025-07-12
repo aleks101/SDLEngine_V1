@@ -24,6 +24,11 @@ set(FREETYPE_LIBRARY
     CACHE FILEPATH "Path to FreeType library" FORCE
 )
 
+##test
+set(FREETYPE_ENABLE_ZLIB OFF)
+set(FREETYPE_ENABLE_PNG OFF)
+##test
+
 
 # Now fetch SDL2_ttf
 FetchContent_Declare(
