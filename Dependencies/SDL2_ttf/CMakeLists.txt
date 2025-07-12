@@ -4,6 +4,11 @@ include(FetchContent)
 #   set(FREETYPE_INCLUDE_DIRS "C:/Developer/Libraries/ft2133/freetype-2.13.3/include/" CACHE PATH "Path to FreeType headers")
 #   set(FREETYPE_LIBRARY "C:/Developer/Libraries/ft2133/freetype-2.13.3/objs/freetype.a" CACHE FILEPATH "Path to FreeType library")
 
+##test
+set(FREETYPE_ENABLE_ZLIB OFF)
+set(FREETYPE_ENABLE_PNG OFF)
+##test
+
 # Now fetch SDL2_ttf
 FetchContent_Declare(
     FreeType
@@ -24,10 +29,7 @@ set(FREETYPE_LIBRARY
     CACHE FILEPATH "Path to FreeType library" FORCE
 )
 
-##test
-#set(FREETYPE_ENABLE_ZLIB OFF)
-#set(FREETYPE_ENABLE_PNG OFF)
-##test
+
 
 
 # Now fetch SDL2_ttf
