@@ -1,4 +1,4 @@
-#About
+# About
 SDLEngine_V1 is a static SDL2, SDL2_image, SDL2_ttf and SDL2_mixer wrapper library
 
 # Requirements
