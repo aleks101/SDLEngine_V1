@@ -11,15 +11,3 @@ FetchContent_Declare(
     GIT_TAG release-2.24.0
 )
 FetchContent_MakeAvailable(SDL2_ttf)
-
-
-
-#[===[
-# Create an imported target for SDL_ttf
-#add_library(SDL2_ttf STATIC IMPORTED GLOBAL)
-
-#set_target_properties(SDL2_ttf PROPERTIES
-#  IMPORTED_LOCATION "${SDL_TTF_DIR}/lib/libSDL2_ttf.a"
-#  INTERFACE_INCLUDE_DIRECTORIES "${SDL_TTF_DIR}/include"
-#)
-]===]
