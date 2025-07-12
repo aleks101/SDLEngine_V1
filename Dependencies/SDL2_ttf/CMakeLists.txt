@@ -5,9 +5,12 @@ include(FetchContent)
 #   set(FREETYPE_LIBRARY "C:/Developer/Libraries/ft2133/freetype-2.13.3/objs/freetype.a" CACHE FILEPATH "Path to FreeType library")
 
 ##test
-set(FREETYPE_ENABLE_ZLIB OFF)
-set(FREETYPE_ENABLE_PNG OFF)
+#set(FREETYPE_ENABLE_ZLIB OFF)
+#set(FREETYPE_ENABLE_PNG OFF)
 ##test
+
+# Disable shared libs globally
+set(BUILD_SHARED_LIBS OFF CACHE BOOL "Only build static libs" FORCE)
 
 # Now fetch SDL2_ttf
 FetchContent_Declare(
