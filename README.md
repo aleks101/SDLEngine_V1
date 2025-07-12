@@ -1,3 +1,6 @@
+#About
+SDLEngine_V1 is a static SDL2, SDL2_image, SDL2_ttf and SDL2_mixer wrapper library
+
 # Requirements
 ## Git
 Git download https://git-scm.com/downloads/win
@@ -21,5 +24,3 @@ cd build
 cmake .. -G "set your generator"
 make
 ```
-
-The library file will be generated inside Build/lib
